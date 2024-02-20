@@ -63,16 +63,16 @@ il prezzo dovrà essere definito come "lead"
 e il badge sarà scuro
 
 
-7) Rendi invisibile la sezione "Offerta del giorno" su schermi piccoli.
+x 7) Rendi invisibile la sezione "Offerta del giorno" su schermi piccoli.
 
-8) Aggiungi nella sezione "Welcome Summer" un'ombra grande ad ogni card.
+x 8) Aggiungi nella sezione "Welcome Summer" un'ombra grande ad ogni card.
 
-9) Crea una sezione "Last Minute", in cui mostrerai 6 immagini delle destinazioni last minute come rettangoli ombreggiati dai bordi arrotondati, senza testo. Rendile responsive come preferisci!
+x 9) Crea una sezione "Last Minute", in cui mostrerai 6 immagini delle destinazioni last minute come rettangoli ombreggiati dai bordi arrotondati, senza testo. Rendile responsive come preferisci!
 
-10) Crea una sezione "Recensioni", dove l'utente potrà trovare alcuni feedback da utenti fittizi. 
+x 10) Crea una sezione "Recensioni", dove l'utente potrà trovare alcuni feedback da utenti fittizi. 
 Piccola immagine tonda a sinistra con bordo 2px azzurro, nome utente e recensione a destra
 
-11) Crea un footer con le informazioni dell'agenzia e un bottone "Contattaci".
+x 11) Crea un footer con le informazioni dell'agenzia e un bottone "Contattaci".
 
 
 
@@ -104,13 +104,13 @@ EXTRAS
 
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <nav class="navbar navbar-expand-xl bg-body-tertiary">
         <div class="container">
           <a class="navbar-brand" href="#">
             <img
               src="/assets/imgs/logo-no-background.png"
               alt="Logo"
-              width="150"
+              width="180"
               class="d-inline-block align-text-top"
             />
           </a>
@@ -170,66 +170,86 @@ EXTRAS
         </div>
       </section>
 
-      <section class="sales-section py-5">
-        <div class="container">
-          <h2 class="mb-4">Saldi</h2>
-          <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4">
-            <div class="col">
-              <div class="card border border-info">
-                <img src="assets/imgs/Costa Rica.png" height="125" width="260" class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <h5 class="card-title">Destinazione 1</h5>
-                  <p class="card-text">Descrizione breve della destinazione.</p>
-                  <a href="#" class="btn btn-info">Scopri</a>
+      <div class="container">
+        <h2 class="d-inline-block">Saldi</h2>
+        <button
+          class="btn btn-primary mb-2 mx-2"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#saldiSection"
+          aria-expanded="false"
+          aria-controls="saldiSection"
+        >
+          Espandi/Riduci
+        </button>
+        <div class="collapse" id="saldiSection">
+          <section class="sales-section py-5">
+            <div class="container">
+              <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4">
+                <div class="col">
+                  <div class="card border border-info">
+                    <img
+                      src="assets/imgs/Costa Rica.png"
+                      height="125"
+                      width="260"
+                      class="card-img-top object-fit-cover"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Destinazione 1</h5>
+                      <p class="card-text">Descrizione breve della destinazione.</p>
+                      <a href="#" class="btn btn-info">Scopri</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card border border-info">
+                    <img src="assets/imgs/faroe.jpg" height="125" width="260" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                      <h5 class="card-title">Destinazione 2</h5>
+                      <p class="card-text">Descrizione breve della destinazione.</p>
+                      <a href="#" class="btn btn-info">Scopri</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card border border-info">
+                    <img src="assets/imgs/Faroe2.png" height="125" width="260" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                      <h5 class="card-title">Destinazione 3</h5>
+                      <p class="card-text">Descrizione breve della destinazione.</p>
+                      <a href="#" class="btn btn-info">Scopri</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col d-md-none d-lg-block">
+                  <div class="card border border-info">
+                    <img
+                      src="assets/imgs/malta (3).jpg"
+                      height="125"
+                      width="260"
+                      class="card-img-top object-fit-cover"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Destinazione 4</h5>
+                      <p class="card-text">Descrizione breve della destinazione.</p>
+                      <a href="#" class="btn btn-info">Scopri</a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="col">
-              <div class="card border border-info">
-                <img src="assets/imgs/faroe.jpg" height="125" width="260" class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <h5 class="card-title">Destinazione 2</h5>
-                  <p class="card-text">Descrizione breve della destinazione.</p>
-                  <a href="#" class="btn btn-info">Scopri</a>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card border border-info">
-                <img src="assets/imgs/Faroe2.png" height="125" width="260" class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <h5 class="card-title">Destinazione 3</h5>
-                  <p class="card-text">Descrizione breve della destinazione.</p>
-                  <a href="#" class="btn btn-info">Scopri</a>
-                </div>
-              </div>
-            </div>
-            <div class="col d-md-none d-lg-block">
-              <div class="card border border-info">
-                <img
-                  src="assets/imgs/malta (3).jpg"
-                  height="125"
-                  width="260"
-                  class="card-img-top object-fit-cover"
-                  alt="..."
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Destinazione 4</h5>
-                  <p class="card-text">Descrizione breve della destinazione.</p>
-                  <a href="#" class="btn btn-info">Scopri</a>
-                </div>
-              </div>
-            </div>
-          </div>
+          </section>
         </div>
-      </section>
+      </div>
 
       <section class="welcome-section py-5">
         <div class="container">
           <h2 class="mb-4">Welcome Summer</h2>
-          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xlg-6 g-4">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-6 g-4">
             <div class="col">
-              <div class="card shadow">
+              <div class="card shadow-lg">
                 <img src="assets/imgs/faroe.jpg" height="170" width="350" class="card-img-top" alt="..." />
                 <div class="card-body">
                   <h5 class="card-title">Destinazione 1</h5>
@@ -239,7 +259,7 @@ EXTRAS
               </div>
             </div>
             <div class="col">
-              <div class="card shadow">
+              <div class="card shadow-lg">
                 <img src="assets/imgs/Costa Rica.png" height="170" width="350" class="card-img-top" alt="..." />
                 <div class="card-body">
                   <h5 class="card-title">Destinazione 2</h5>
@@ -249,7 +269,7 @@ EXTRAS
               </div>
             </div>
             <div class="col">
-              <div class="card shadow">
+              <div class="card shadow-lg">
                 <img src="assets/imgs/faroe.jpg" height="170" width="350" class="card-img-top" alt="..." />
                 <div class="card-body">
                   <h5 class="card-title">Destinazione 3</h5>
@@ -259,7 +279,7 @@ EXTRAS
               </div>
             </div>
             <div class="col">
-              <div class="card shadow">
+              <div class="card shadow-lg">
                 <img src="assets/imgs/Costa Rica.png" height="170" width="350" class="card-img-top" alt="..." />
                 <div class="card-body">
                   <h5 class="card-title">Destinazione 4</h5>
@@ -269,7 +289,7 @@ EXTRAS
               </div>
             </div>
             <div class="col">
-              <div class="card shadow">
+              <div class="card shadow-lg">
                 <img src="assets/imgs/Faroe2.png" height="170" width="350" class="card-img-top" alt="..." />
                 <div class="card-body">
                   <h5 class="card-title">Destinazione 5</h5>
@@ -279,7 +299,7 @@ EXTRAS
               </div>
             </div>
             <div class="col">
-              <div class="card shadow">
+              <div class="card shadow-lg">
                 <img
                   src="assets/imgs/malta (3).jpg"
                   height="170"
@@ -298,15 +318,15 @@ EXTRAS
         </div>
       </section>
 
-      <section class="offer-section py-5">
+      <section class="offer-section py-5 d-none d-sm-block">
         <div class="container">
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-8">
               <div class="card border-0 rounded">
                 <img src="assets/imgs/faroe.jpg" class="card-img-top rounded shadow" alt="..." />
               </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-4">
               <div class="card border-0">
                 <div class="card-body">
                   <p class="card-title fs-1">Isole Faroe</p>
@@ -319,7 +339,136 @@ EXTRAS
           </div>
         </div>
       </section>
+
+      <section class="last-minute-section py-5">
+        <div class="container">
+          <h2 class="mb-4">Last Minute</h2>
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card shadow">
+                <img src="assets/imgs/Faroe2.png" class="rounded card-img-top" alt="..." />
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow">
+                <img src="assets/imgs/Faroe2.png" class="rounded card-img-top" alt="..." />
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow">
+                <img src="assets/imgs/Faroe2.png" class="rounded card-img-top" alt="..." />
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow">
+                <img src="assets/imgs/Faroe2.png" class="rounded card-img-top" alt="..." />
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow">
+                <img src="assets/imgs/Faroe2.png" class="rounded card-img-top" alt="..." />
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow">
+                <img src="assets/imgs/Faroe2.png" class="rounded card-img-top" alt="..." />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="reviews-section py-5">
+        <div class="container">
+          <h2 class="text-center mb-4">Recensioni</h2>
+          <div class="row">
+            <div class="col-12 col-lg-6 mb-4">
+              <div class="d-flex align-items-center">
+                <img
+                  src="assets/imgs/user1.png"
+                  class="rounded-circle border border-info me-3"
+                  width="80"
+                  height="80"
+                  alt="..."
+                />
+                <div>
+                  <h5 class="mb-0">mr. Kitty Cat</h5>
+                  <p class="mb-0 fst-italic">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique corrupti quo vitae eius animi,
+                    beatae dolorem voluptate sapiente dicta veniam magni illum hic nobis dolorum tempore vero.
+                    Doloremque, mollitia eligendi.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 mb-4">
+              <div class="d-flex align-items-center">
+                <img
+                  src="assets/imgs/user1.png"
+                  class="rounded-circle border border-info me-3"
+                  width="80"
+                  height="80"
+                  alt="..."
+                />
+                <div>
+                  <h5 class="mb-0">mr. Kitty Cat</h5>
+                  <p class="mb-0 fst-italic">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique corrupti quo vitae eius animi,
+                    beatae dolorem voluptate sapiente dicta veniam magni illum hic nobis dolorum tempore vero.
+                    Doloremque, mollitia eligendi.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 mb-4">
+              <div class="d-flex align-items-center">
+                <img
+                  src="assets/imgs/user1.png"
+                  class="rounded-circle border border-info me-3"
+                  width="80"
+                  height="80"
+                  alt="..."
+                />
+                <div>
+                  <h5 class="mb-0">mr. Kitty Cat</h5>
+                  <p class="mb-0 fst-italic">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique corrupti quo vitae eius animi,
+                    beatae dolorem voluptate sapiente dicta veniam magni illum hic nobis dolorum tempore vero.
+                    Doloremque, mollitia eligendi.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 mb-4">
+              <div class="d-flex align-items-center">
+                <img
+                  src="assets/imgs/user1.png"
+                  class="rounded-circle border border-info me-3"
+                  width="80"
+                  height="80"
+                  alt="..."
+                />
+                <div>
+                  <h5 class="mb-0">mr. Kitty Cat</h5>
+                  <p class="mb-0 fst-italic">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique corrupti quo vitae eius animi,
+                    beatae dolorem voluptate sapiente dicta veniam magni illum hic nobis dolorum tempore vero.
+                    Doloremque, mollitia eligendi.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <footer class="footer-section py-4 bg-dark text-white">
+      <div class="container text-center">
+        <button class="btn btn-outline-light border border-white">Contattaci</button>
+        <p>Informazioni dell'agenzia - Indirizzo, città, stato - Telefono: 123-456-7890</p>
+      </div>
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
